@@ -13,7 +13,7 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 320px; /* Increase the width for better alignment */
+    width: 320px; 
 }
 
 label {
@@ -22,7 +22,7 @@ label {
 }
 
 input {
-    width: calc(100% - 16px); /* Adjusting the width to account for padding */
+    width: calc(100% - 16px); 
     padding: 8px;
     margin-bottom: 12px;
     box-sizing: border-box;
