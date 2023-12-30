@@ -42,7 +42,6 @@ function validateForm() {
         placeOfBirthError.textContent = 'Place of Birth is required';
     }
 
-    // Additional validation for studies and hobbies can be added if needed
 
     if (!/\S+@\S+\.\S+/.test(email)) {
         emailError.textContent = 'Invalid email address';
@@ -52,16 +51,13 @@ function validateForm() {
         passwordError.textContent = 'Password must be at least 8 characters long';
     }
 
-    // Password strength indicator
     var passwordStrength = document.getElementById('passwordStrength');
     passwordStrength.textContent = getStrength(password);
 
-    // If all fields are valid, you can submit the form or perform other actions
     if (nameError.textContent === '' && lastNameError.textContent === '' && ageError.textContent === ''
         && placeOfBirthError.textContent === '' && studiesError.textContent === '' && hobbiesError.textContent === ''
         && emailError.textContent === '' && passwordError.textContent === '') {
         alert('Form submitted successfully!');
-        // Add further actions here, like form submission or redirection
     }
 }
 
@@ -81,7 +77,6 @@ function togglePasswordVisibility() {
 function getStrength(password) {
     var strength = 0;
 
-    // Add more rules for a stronger password if needed
     if (password.length >= 8) {
         strength += 1;
     }
